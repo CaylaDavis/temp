@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "MyCopyActivity",
+				"name": "CopyTheMoviesFile",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -21,26 +21,8 @@
 							"recursive": true
 						}
 					},
-					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						}
-					},
 					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "ArmtemplateTestDatasetIn",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "ArmtemplateTestDatasetOut",
-						"type": "DatasetReference"
-					}
-				]
+				}
 			}
 		],
 		"annotations": [],
